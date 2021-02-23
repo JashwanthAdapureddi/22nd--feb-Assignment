@@ -1,0 +1,11 @@
+Given three baskets of fruit represented as Python sets, complete the following program using set operations to determine which fruits are in basket1 or basket2 but not in basket3.
+basket1 = {"apples", "oranges", "grapes"}  
+basket2 = {"blueberries", "pears", "apples", "oranges", "lemons"}  
+basket3 = {"bananas", "lemons", "grapes", "apples"}  
+fruit = basket1.union(basket2)
+for element in basket3 :
+   if element in fruit :
+      fruit.remove(element)
+for element in sorted(fruit) :
+    print(element, end=", ")
+print()   
