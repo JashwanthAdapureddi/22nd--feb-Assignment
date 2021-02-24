@@ -1,0 +1,14 @@
+Your task is to write a program that reads a text string from the user and determines which letters of the alphabet are not used in the string.
+inputStr = input("Enter a text string: ")
+text = inputStr.upper()
+
+# TODO: define a set named notUsed that contains the letters of
+# the alphabet that are not contained in the user entered string.
+alphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+for x in text:
+   if x in alphabets:
+      alphabets.remove(x)
+notUsed = alphabets      
+for element in sorted(notUsed) :
+   print(element, end="")
+print(),
