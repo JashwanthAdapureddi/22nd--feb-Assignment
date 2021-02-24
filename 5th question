@@ -1,0 +1,22 @@
+Complete the following program that acts as a translator for the periodic table of the elements. The program repeatedly prompts the user for an element symbol and then prints the element’s name or an error message until the user enters Q.
+
+Your program should use the prompt Enter symbol (or Q to quit): for user input. The output should be Invalid symbol if the user enters an invalid element symbol; otherwise the output is the translation in the format H = Hydrogen.
+# The periodic table of elements.
+periodicTable = {
+   "H": "Hydrogen", "C": "Carbon", "O": "Oxygen",
+   "Fe": "Iron", "Au": "Gold", "Na": "Sodium",
+   "Ag": "Silver", "Pb": "Lead", "Pu": "Plutonimum"
+}
+
+# Use the prompt "Enter symbol (or Q to quit): "
+# Print either "Invalid symbol." if an error occurs
+# or "element = element name" ("%s = %s")
+for element in periodicTable :
+   element = input("Enter symbol (or Q to quit): ")
+   if element in periodicTable :
+      print(element, "=", periodicTable[element])
+   elif element == "Q" :
+      quit()
+   else :
+      print("Invalid symbol. ")
+      
