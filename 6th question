@@ -1,0 +1,9 @@
+# Given two numbers, return true if they both have the same sign.
+
+def valuesHaveTheSameSign(x, y):
+    if x*y>0:
+       return True
+    elif x*y<0:
+       return False
+    elif x==0 and y==0:
+        return True
