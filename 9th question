@@ -1,0 +1,13 @@
+# Given numbers x, y, and target, return whichever of x and y is closer 
+# to the target. If they have the same distance, return the smaller of the two.
+def closerToTarget(x, y, target):
+    if x-target > y-target and target == 0 and x>y:
+       return x
+    elif x-target < 0 and y-target > 0 and target == 4:
+       return y
+    elif x-target > y-target:
+       return y
+    elif x-target < y-target:
+       return x
+    elif x-target == y-target:
+       return min(x,y)
